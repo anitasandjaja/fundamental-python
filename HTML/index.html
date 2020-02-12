@@ -1,0 +1,232 @@
+<!-- HTML adalah bahasa markup yang digunakan untuk membuat struktur halaman website -->
+<!-- HTML bukan bahasa pemrograman -->
+<!-- Versi terbaru saat ini adalah versi 5 (HTML 5) -->
+<!-- HTML identic dengan istilah tag, dimana masing2 tag memiliki karakteristik berbeda -->
+
+<!-- Memberi tahu browser kita menggunakan HTML5 -->
+<!DOCTYPE html>
+
+<!-- root dari semua tag -->
+<html>
+
+    <!-- Mendefinikan informasi tambahan terhadap browser -->
+    <head>
+        <!-- Menggunakan character set UTF-8 krn paling lengkap -->
+        <meta charset="UTF-8">      
+        <!-- Judul halaman -->
+        <title>Purwadhika Data Science</title>
+        <!-- Tempat menulis CSS -->
+        <!-- CSS digunakan untuk mengatur style HTML-->
+        <style>
+            table, th, td{
+                border: 3px solid #302ddb;
+                border-collapse: collapse;
+                padding: 7px 10px;
+            }
+        
+        </style>
+    </head>
+    
+    <!-- Mendefinisikan apapun yang ingin ditampilkan di halaman website -->
+    <body>
+        <!-- HEADER -->
+        <h1>Heading Satu</h1>
+        <h2>Heading Dua</h2>
+        <h3>Heading Tiga</h3>
+        <h4>Heading Empat</h4>
+        <h5>Heading Lima</h5>
+        <h6>Heading Enam</h6>
+ 
+        <!-- PARAGRAPH -->
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum suscipit sint, architecto dicta sit eveniet modi dignissimos at dolor assumenda ipsam sunt pariatur doloribus consequuntur magnam impedit quibusdam maiores illo!
+        </p>
+        <p> 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+    
+        <!-- ANCHOR -->
+        <!-- relative path / absolute path -->
+        <a href = "www.kompas.com">Link KOMPAS</a>
+        <br><br><br>
+
+        <!-- IMAGE -->
+        <!-- src : sumber gambar -->
+        <!-- alt : berisi teks yang akan muncul jika src tidak dapat diakses-->
+        <img width"200" src= "https://cdn.mos.cms.futurecdn.net/vChK6pTy3vN3KbYZ7UU7k3-1200-80.jpg" alt="Black Kitten">
+        <br>
+        <!-- TEXT FORMATTING -->
+        <b>Ini bold</b><br>
+        <strong>Ini strong</strong><br>
+    
+        <i>Ini italic</i><br>
+        <em>Ini emphasized</em><br>
+    
+        <ins>Ini insert</ins><br>
+        <u>Ini underline</u><br>
+
+        <!-- atas-->
+        O<sup>2</sup><br>
+        <!-- bawah -->
+        CO <sub>2</sub><br>
+
+        <mark>Ini Mark</mark><br>
+
+        <!-- LIST -->
+        <!-- Ordered List -->
+        <ol>
+            <li>Pertama</li>
+            <li>Kedua</li>
+            <li>Ketiga</li>
+            <li>Keempat</li>
+            <li>Kelima</li>
+        </ol>
+
+        <!-- Unordered List -->
+        <ul>
+            <li>Pertama</li>
+            <li>Kedua</li>
+            <li>Ketiga</li>
+            <li>Keempat</li>
+            <li>Kelima</li>
+        </ul>
+        
+        <!-- TABLE -->
+        <!-- td: menentukan banyak kolom --> 
+        <!-- tr: menentukan banyak baris -->
+        <!-- th: memberikan efek bold dan align centre -->
+        <!-- colspan: menggabungkan kolom -->
+        <!-- rowspan: menggabungkan baris -->
+
+        
+        <table>
+            <tr>
+                <th colspan="3">DATA DIRI</th>
+            </tr>
+            <tr>
+                <th>Nama</th>
+                <th>TTL</th>
+                <th>Alamat</th>
+            </tr>
+            <tr>
+                <td>Jung Hae-in</td>
+                <td>Seoul, 1 April 1988</td>
+                <td>Seoul, Korea Selatan</td>
+            </tr>
+            <tr>
+                <td>Lee Seung-gi</td>
+                <td>Seoul, 13 Januari 1987</td>
+                <td>Seoul, Korea Selatan</td>
+            </tr>
+            <tr>
+                <td>John Wick</td>
+                <td>New York, 17 Agustus 1980</td>
+                <td>Jakarta, Indonesia</td>
+            </tr>
+            <tr>
+                <th rowspan="2">TOTAL</th>
+                <td>Barang</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>PPN</td>
+                <td>1000</td>
+
+            </tr>
+        </table>
+
+
+        <!-- FORM -->
+        <form >
+            <p>
+                Nama: <input type="text">
+            </p>
+            <p>
+
+            <input type="radio" name="Gender" id="pria">Pria
+            <input type="radio" name="Gender" id="wanita">Wanita
+            </p>
+            <p>
+                <input type="checkbox" name="language" id="html">HTML
+                <input type="checkbox" name="language" id="css">CSS
+                <input type="checkbox" name="language" id="python">Python
+            </p>
+            <input type="button" value="FINISH">
+        </form>
+        <br>
+        <br>
+        <br>
+
+        <table>
+            <tr>
+                <th colspan="6">Purwadhika League 2020</th>
+            </tr>
+            <tr>
+                <th><i><mark>Rank</mark></i></th>
+                <th><i><mark>Club</mark></i></th>
+                <th><i><mark>Logo</mark></i></th>
+                <th><i><mark>Function</mark></i></th>
+                <th><i><mark>Level</mark></i></th>
+                <th><i><mark>OK</mark></i></th>
+            </tr>
+            <tr>
+                <td>1<sup>st</sup></td>
+                <td>Barcelona<sub> FC</sub></td>
+                <td><img width="50" src="https://www.cendananews.com/wp-content/uploads/2017/10/Logo-Barcelona-FC.png"></td>
+                <td>2x<sup>3</sup>+3x<sup>2</sup>-x-13=0</td>
+                <td><input type="radio" name="levela" id="junior">Junior
+                    <input type="radio" name="levela" id="prof">Profesional</td>
+                <td><input type="button" value="EDIT"></td>
+            </tr>
+            <tr>
+                <td>2<sup>nd</sup></td>
+                <td>Bayern<sub> Munich</sub></td>
+                <td><img width="20" src="https://www.stickpng.com/img/icons-logos-emojis/football/uk-premier-league/manchester-united-logo" </td>
+                <td>3y<sup>3</sup>-5y<sup>2</sup>-2y+3=0</td>
+                <td><input type="radio" name="levelb" id="junior">Junior
+                    <input type="radio" name="levelb" id="prof">Profesional</td>
+                <td><input type="button" value="EDIT"></td>
+            </tr>
+            <tr>
+                <td>3<sup>rd</sup></td>
+                <td>Real<sub> Madrid</sub></td>
+                <td>Jakarta Timur, DKI Jakarta</td>
+                <td>2z<sup>3</sup>+z<sup>2</sup>-2z+5=0</td>
+                <td><input type="radio" name="levelc" id="junior">Junior
+                    <input type="radio" name="levelc" id="prof">Profesional</td>
+                <td><input type="button" value="EDIT"></td>
+            </tr>
+        </table>
+
+        <!-- FORM -->
+        <form >
+            <p>
+                Nama : <input type="text">
+            </p>
+
+            <!-- name pada input radio harus sama -->
+            <p>
+                <input type="radio" name="gender" id="pria"> Pria
+                <input type="radio" name="gender" id="wanita"> Wanita
+            </p>
+
+            <p>
+                <input type="checkbox" name="language" id="html"> HTML
+                <input type="checkbox" name="language" id="css"> CSS
+                <input type="checkbox" name="language" id="python"> PYTHON
+            </p>
+
+            <input type="button" value="FINISH">
+        </form>    
+
+        <!--
+            NOTE
+
+            TAG : h1, h2, p, a, 
+            ATRRIBUTE : href, src (source), alt(alternative), style
+        -->
+ 
+    <!-- abaikan -->
+    <div style="margin-top: 900px;" ></div>
+    </body>
+</html>
